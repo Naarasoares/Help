@@ -5,17 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Home extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.activity_menu);
     }
 
-    public void logar(View view){
+    public void FazerBO(View view){
         Intent startNewActivity = new Intent(this, Menu.class);
         startActivity(startNewActivity);
     }
 }
-
