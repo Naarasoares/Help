@@ -14,7 +14,22 @@ public class Menu extends AppCompatActivity {
     }
 
     public void FazerBO(View view){
-        Intent startNewActivity = new Intent(this, Menu.class);
+        Intent startNewActivity = new Intent(this, Help.class);
         startActivity(startNewActivity);
+    }
+
+    public void VerMapa(View view){
+        Intent abrirMapa = new Intent(this, Mapa.class);
+        startActivity(abrirMapa);
+    }
+
+    public void abrirConfiguracoes(View view){
+        Intent abreconfiguracoes = new Intent(this, Configuracao.class);
+        startActivity(abreconfiguracoes);
+    }
+
+    public void SairMenu(View view){
+        Intent sair_sistema = new Intent(this, Home.class);
+        startActivity(sair_sistema);
     }
 }

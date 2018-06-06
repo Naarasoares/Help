@@ -6,9 +6,20 @@
     <string name="login">Login</string>
     <string name="lembrar_senha">Lembrar Senha</string>
     <string name="titulo">HELP</string>
-    <string name="tituloBO">Fazer BO</string>
+    <string name="tituloBO">HELP</string>
     <string name="tituloMapa">Ver Mapa</string>
     <string name="tituloConfiguracoes">Configurações</string>
     <string name="tituloSair">Sair</string>
-
+    <string name="TextoPolicia">Chamar Polícia</string>
+    <string name="TextoEmergencia">Chamar Ambulância</string>
+    <string name="TextoOcorrencia">Ocorrência</string>
+    <string name="txt_Nome">Nome</string>
+    <string name="txt_Logradouro">Logradouro</string>
+    <string name="txt_CPF">CPF</string>
+    <string name="txt_CEP">CEP</string>
+    <string name="txt_Numero">Número</string>
+    <string name="txt_Bairro">Bairro</string>
+    <string name="txt_Cidade">Cidade</string>
+    <string name="txt_Estado">Estado</string>
+    <string name="txt_DataNascimento">Nascimento</string>
 </resources>
