@@ -22,4 +22,5 @@
     <string name="txt_Cidade">Cidade</string>
     <string name="txt_Estado">Estado</string>
     <string name="txt_DataNascimento">Nascimento</string>
+    <string name="title_activity_mapa">Map</string>
 </resources>
