@@ -27,5 +27,7 @@
     <string name="title_activity_mapa">Map</string>
     <string name="txt_BotaoEnviar">Enviar</string>
     <string name="btn_EndAtual">Clique para Atribuir seu local atual</string>
+    <string name="btn_VerHistorico">Histórico Reclamações</string>
+    <string name="title_activity_historico__reclamacoes">Historico_Reclamacoes</string>
 
 </resources>

@@ -147,16 +147,18 @@
                 android:inputType="textPersonName"
                 android:text="Bairro" />
 
+            <EditText
+                android:id="@+id/edt_Cidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/txt_Cidade" />
+
             <Spinner
                 android:id="@+id/spn_Estado"
                 android:layout_width="match_parent"
                 android:layout_height="34dp" />
-
-            <Button
-                android:id="@+id/btn_EndAtual"
-                android:layout_width="351dp"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_EndAtual" />
 
             <Button
                 android:id="@+id/btn_enviar"

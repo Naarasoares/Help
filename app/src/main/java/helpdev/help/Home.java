@@ -50,5 +50,10 @@ public class Home extends AppCompatActivity {
         startActivity(Abre_Mapa);
     }
 
+    public void Abrir_Hist_Reclamacoes(View view){
+        Intent Abre_Mapa = new Intent(this, Reclamacao.class);
+        startActivity(Abre_Mapa);
+    }
+
 }
 
