@@ -6,12 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String CRIA_USUARIO = "CREATE TABLE usuario (Nome varchar(144), RG varchar(12), CPF int, Cod_Endereco int, PRIMARY KEY (CPF), FOREIGN KEY (Cod_Endereco) REFERENCES endereco(Cod_Endereco))";
-    private static final String CRIA_SERVICO = "CREATE TABLE servico (Cod_Servico int, Tipo int, Cod_Endereco int, Data date, PRIMARY KEY (Registro), FOREIGN KEY (Cod_Endereco) REFERENCES endereco(Cod_Endereco))";
-    private static final String CRIA_SERVIDOR = "CREATE TABLE servidor (Cod_Servico int, CPF_Autoridade int, FOREIGN KEY (Cod_Servico) REFERENCES servico(Cod_Servico), FOREIGN KEY (CPF_Autoridade) REFERENCES usuario(CPF))";
-    private static final String CRIA_EMERGENCIA = "CREATE TABLE emergencia (Cod_Emergecia int, Cod_Endereco int, Tipo int, Descricao text, FOREIGN KEY (Cod_Endereco) REFERENCES endereco(Cod_Endereco))";
-    private static final String CRIA_OCORRENCIA = "CREATE TABLE ocorrencia (Cod_Ocorrencia int, Tipo varchar(144), Cod_Endereco int, Data date, Descricao text, PRIMARY KEY (Cod_Ocorrencia), FOREIGN KEY (Cod_Endereco) REFERENCES endereco(Cod_Endereco))";
-    private static final String CRIA_ENDERECO = "CREATE TABLE endereco (Cod_Endereco int, Logradouro varchar(144), Numero int, Bairro varchar(144), Cidade varchar(144), Estado varchar(144), CEP varchar(144), Complemento varchar(144), PRIMARY KEY (Cod_Endereco))";
+    private static final String CRIA_USUARIO = "CREATE TABLE Reclamacao (Id int, Nome varchar(144), CPF varchar(11), Rua varchar(155), Bairro varchar(155), Cidade varchar(155), " +
+            "Estado varchar(2), Descricao varchar(1000), email varchar(100), Tipo varchar(50), Data date, PRIMARY KEY (ID))";
 
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "HELP.db";
@@ -22,11 +18,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CRIA_USUARIO);
-        db.execSQL(CRIA_SERVICO);
-        db.execSQL(CRIA_SERVIDOR);
-        db.execSQL(CRIA_EMERGENCIA);
-        db.execSQL(CRIA_OCORRENCIA);
-        db.execSQL(CRIA_ENDERECO);
     }
 
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

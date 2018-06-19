@@ -8,7 +8,7 @@
     <string name="titulo">HELP</string>
     <string name="tituloBO">HELP</string>
     <string name="tituloMapa">Ver Mapa</string>
-    <string name="tituloConfiguracoes">Configurações</string>
+    <string name="txtbtn_ChamaReclamacoes">Fazer Reclamação</string>
     <string name="tituloSair">Sair</string>
     <string name="TextoPolicia">Chamar Polícia</string>
     <string name="TextoEmergencia">Chamar Ambulância</string>
@@ -22,5 +22,10 @@
     <string name="txt_Cidade">Cidade</string>
     <string name="txt_Estado">Estado</string>
     <string name="txt_DataNascimento">Nascimento</string>
+    <string name="txtbtn_ChamaPolicia">Chamar Policia</string>
+    <string name="txtbtn_ChamaAmbulancia">Chamar Ambulancia</string>
     <string name="title_activity_mapa">Map</string>
+    <string name="txt_BotaoEnviar">Enviar</string>
+    <string name="btn_EndAtual">Clique para Atribuir seu local atual</string>
+
 </resources>
