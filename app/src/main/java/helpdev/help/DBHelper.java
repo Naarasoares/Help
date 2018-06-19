@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String CRIA_USUARIO = "CREATE TABLE Reclamacao (Id int NOT NULL, Nome varchar(144), " +
+    private static final String CRIA_USUARIO = "CREATE TABLE Reclamacao (Id INTEGER NOT NULL , Nome varchar(144), " +
             "CPF varchar(11), Rua varchar(155), Bairro varchar(155), Cidade varchar(155), " +
             "Estado varchar(2), Descricao varchar(1000), email varchar(100), Tipo varchar(50), Data date, PRIMARY KEY (ID))";
 
