@@ -1,6 +1,7 @@
 package helpdev.help;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -21,23 +22,17 @@ public class Home extends AppCompatActivity {
     }
 
     public void Chamar_Ambulancia(View view) {
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:190"));
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            return;
-        }
-        startActivity(callIntent);
+        Intent i = new Intent(Intent.ACTION_DIAL);
+        String p = "tel:190";
+        i.setData(Uri.parse(p));
+        startActivity(i);
     }
 
     public void Chamar_Policia(View view) {
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:192"));
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            return;
-        }
-        startActivity(callIntent);
+        Intent i = new Intent(Intent.ACTION_DIAL);
+        String p = "tel:192";
+        i.setData(Uri.parse(p));
+        startActivity(i);
     }
 
     public void Abrir_Mapa(View view){
